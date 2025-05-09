@@ -1,0 +1,133 @@
+/* Estilos globales */
+:root {
+  --primary-color: #0A39E4;
+  --primary-dark: #082EC9;
+  --primary-light: #3F6BF3;
+  --text-color: #333333;
+  --bg-color: #F9F9F9;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Encabezado con logo */
+.site-header {
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  text-align: center;
+}
+.site-header img {
+  width: 422px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* Títulos */
+h1 {
+  color: var(--primary-dark);
+  margin-bottom: 20px;
+}
+
+/* Enlaces */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+table th,
+table td {
+  border: 1px solid #DDDDDD;
+  padding: 8px;
+}
+table th {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  text-align: left;
+}
+
+/* Formularios */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Botones */
+button,
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+button:hover,
+input[type="submit"]:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Acciones en tablas */
+.table-actions a {
+  margin-right: 10px;
+}
+
+/* Mensajes de error */
+.error {
+  color: red;
+  margin-bottom: 15px;
+}
+
+/* Enlace de cancelar */
+.cancel-link {
+  margin-left: 10px;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cancel-link:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Reducir tamaño de fuente en celdas de tablas */
+table td {
+  font-size: 0.775rem;
+}
+
